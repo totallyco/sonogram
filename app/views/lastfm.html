@@ -1,0 +1,16 @@
+<div class="row" ng-controller="LastfmCtrl">
+    <div class="col-sm-12 col-lg-6" ng-repeat="song in songs">
+        <a class="thumbnail" href="{{song.url}}" title="{{song.artist['#text']}} - {{song.name}}" style="display: block;">
+            <div class="media">
+                <div class="pull-left" href="#">
+                    <img class="media-object" src="{{song.image[2]['#text']}}">
+                </div>
+                <div class="media-body">
+                    <strong>{{song.artist['#text']}}</strong><br />
+                    {{song.name}}<br />
+                    <em>{{song.date['#text']}}</em>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
